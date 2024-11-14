@@ -1,0 +1,13 @@
+.ProgressBar {
+  -webkit-appearance: none;
+
+  width: 100%;
+  height: 8px;
+
+  cursor: pointer;
+
+  border-radius: 5px;
+
+  background: rgba(255, 255, 255, 0.6) linear-gradient(#ffffff, #ffffff) no-repeat;
+  transition: height .1s ease-in-out, background-size .3s linear;
+}

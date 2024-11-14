@@ -1,0 +1,54 @@
+.EndScreenBox {
+  width: 100%;
+  height: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.EndScreen {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+  max-width: 480px;
+  max-height: 480px;
+
+  background: #191616;
+  border: 0.5px solid #252525;
+  border-radius: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  gap: 3rem;
+
+  font-size: 24px;
+  font-weight: bold;
+
+  color: #ffffff;
+
+  padding: 8px;
+
+  button {
+    position: absolute;
+    bottom: 0;
+    border: none;
+
+    margin: 8px;
+    width: calc(100% - 16px);
+    height: 48px;
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    color: #FFFFFF;
+    background: #fa586a;
+  }
+}

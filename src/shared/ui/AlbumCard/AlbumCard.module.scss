@@ -1,0 +1,82 @@
+.AlbumCardEntity {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-right: 4px;
+}
+
+.AlbumCardBox {
+  width: 100%;
+
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+
+  button {
+    border: 0;
+    background: 0;
+    outline: 0;
+    cursor: pointer;
+
+    svg {
+      transition: transform 0.15s ease;
+    }
+
+    &[data-open="true"] {
+      svg {
+        transform: rotate(-180deg);
+      }
+    }
+  }
+}
+
+.AlbumCard {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+
+  color: #FFFFFF;
+  font-weight: normal;
+
+  img {
+    border-radius: 10px
+  }
+
+  button {
+    width: 20px;
+  }
+}
+
+.AlbumCardMetadata {
+  display: flex;
+  flex-direction: column;
+
+  span {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+    &:last-child {
+      color: #999898;
+    }
+  }
+}
+
+.AlbumCardSpoilerItem {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.15s ease;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  color: #a4a4a4;
+  font-weight: 500;
+  font-size: 16px;
+
+  &[data-open="true"] {
+    max-height: 10rem;
+  }
+}

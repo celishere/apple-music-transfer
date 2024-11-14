@@ -1,0 +1,21 @@
+.Steps {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 32px 16px;
+}
+
+.stepsContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.stepItem {
+  display: flex;
+  align-items: center;
+  flex: 1;
+
+  &:last-child {
+    flex: 0;
+  }
+}

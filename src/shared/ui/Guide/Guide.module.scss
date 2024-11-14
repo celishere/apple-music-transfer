@@ -1,0 +1,135 @@
+.GuideBox {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+
+  input {
+    display: none;
+  }
+
+  &[data-open="true"] {
+    position: absolute;
+    align-items: center;
+    top: 0;
+    height: 100%;
+
+    z-index: 20;
+
+    .Guide {
+      max-height: 80%;
+    }
+  }
+}
+
+.Guide {
+  cursor: pointer;
+
+  width: 100%;
+  height: 100%;
+  max-width: 480px;
+  max-height: 480px;
+
+  background: #191616;
+  border: 2px solid #252525;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  font-size: 18px;
+  font-weight: 600;
+
+  color: #c08347;
+  text-align: center;
+
+  p {
+    color: #FFFFFF;
+    font-weight: 500;
+  }
+
+  padding: 8px;
+}
+
+.GuideBtn {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.GuideBtnTitle {
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+  gap: 6px;
+  color: #FFFFFF;
+}
+
+.GuideBtnCollapse {
+  border: 0;
+  background: 0;
+  outline: 0;
+  cursor: pointer;
+
+  svg {
+    transition: transform 0.15s ease;
+  }
+
+  &[data-open="true"] {
+    svg {
+      transform: rotate(-180deg);
+    }
+  }
+}
+
+.GuideSpoilerItem {
+  max-height: 0;
+  overflow: hidden;
+
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+
+  color: #a4a4a4;
+  font-weight: 500;
+  font-size: 16px;
+
+  padding-left: 10px;
+
+  &[data-open="true"] {
+    max-height: max-content;
+    overflow-y: scroll;
+  }
+}
+
+.GuideStep {
+  display: flex;
+  gap: 16px;
+  padding-right: 8px;
+}
+
+.GuideStepBox {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 8px;
+
+  h1 {
+    text-align: start;
+    color: #FFFFFF;
+    font-size: 20px;
+  }
+
+  a {
+    color: #c08347;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: start;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+}

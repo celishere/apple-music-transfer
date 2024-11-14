@@ -1,0 +1,33 @@
+.FetchingProgressBox {
+  width: 100%;
+  height: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.FetchingProgress {
+  width: 100%;
+  height: 100%;
+  max-width: 480px;
+  max-height: 480px;
+
+  background: #191616;
+  border: 0.5px solid #252525;
+  border-radius: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  gap: 3rem;
+
+  font-size: 18px;
+  font-weight: 600;
+
+  color: #c08347;
+
+  padding: 8px;
+}

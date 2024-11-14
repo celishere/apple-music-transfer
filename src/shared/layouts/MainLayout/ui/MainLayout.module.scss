@@ -1,0 +1,10 @@
+.MainLayout {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  height: 100vh;
+
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}

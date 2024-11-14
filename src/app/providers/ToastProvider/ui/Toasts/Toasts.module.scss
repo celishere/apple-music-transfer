@@ -1,0 +1,120 @@
+.ToastsContainer {
+  position: fixed;
+  width: 80vw;
+
+  top: 20px;
+
+  display: flex;
+  justify-content: center;
+
+  z-index: 1000;
+
+  pointer-events: none;
+}
+
+.Toasts {
+  width: 100vw;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 16px;
+}
+
+.Toast {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  gap: 10px;
+
+  padding: 6px 10px;
+
+  pointer-events: all;
+  cursor: pointer;
+
+  width: fit-content;
+
+  margin: 0 auto;
+
+  border-radius: 20px;
+
+  opacity: 0;
+  animation: fadeIn 0.29s ease-in-out forwards;
+
+  a {
+    color: #FFF;
+    text-align: center;
+
+    font-size: 14px;
+    font-style: normal;
+
+    line-height: 20px;
+  }
+}
+
+.ToastHide {
+  animation: fadeOut 0.3s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+.baseContainer {
+  border: 1px solid #5F5F5F;
+  background: #212121;
+  box-shadow: 0 4px 56px 9px #000;
+}
+
+.baseContainer img {
+  border-radius: 8px;
+}
+
+.baseText {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.baseText a {
+  font-size: 14px;
+}
+
+.baseText span {
+  font-size: 12px;
+}
+
+.successContainer {
+  border: 1px solid #5F5F5F;
+  background: #2d8305;
+  box-shadow: 0 4px 56px 9px #000;
+}
+
+.errorContainer {
+  border: 3px solid #420017;
+  background: #670408c2;
+  box-shadow: 0 4px 56px 9px #000;
+}

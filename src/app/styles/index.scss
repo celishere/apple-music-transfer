@@ -1,0 +1,94 @@
+@font-face {
+  font-family: 'SF Pro Display';
+  font-weight: 400;
+  src: url('/fonts/SFProDisplay-Regular-Opt.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  font-weight: 600;
+  src: url('/fonts/SFProDisplay-Semibold-Opt.woff') format('woff');
+  font-display: swap;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "SF Pro Display", ui-sans-serif;
+
+  background: linear-gradient(135deg, #381e00 0%, #b44941 100%);
+
+  color: #FFFFFF;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 8px;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+
+  @media screen and (min-width: 860px) {
+    width: 4px;
+  }
+}
+
+::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  border-radius: 16px;
+  background: #3f3f3f;
+}
+
+input {
+  color-scheme: dark;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  font-size: 18px !important;
+  color: #FFFFFF !important;
+  box-shadow: inset 0 0 0 200px #2b2000;
+}
+
+input,
+button,
+textarea,
+select {
+  margin: 0;
+  font: inherit;
+}
+
+img[src=""]{
+  content: "";
+}
+
+* {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  margin: 0;
+  padding: 0;
+}
+
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+:focus {
+  outline: none;
+}
+
+:active,:hover {
+  outline: 0
+}
+
+#__next {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  justify-content: center;
+}
